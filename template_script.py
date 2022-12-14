@@ -10,10 +10,18 @@ from syncro_python_wrapper import *
 ############  Script Example starts below ############
 
 #Testing getUsers() class
-allusers = getUsers()
+#allusers = getUsers()
+
+#Testing getContracts() class
+#contracts = getContracts()
+#print(contracts)
+
+#Testing getCustomers() class
+#customers = getCustomers()
+#print(customers)
 
 #Print users
-print(allusers)
+#print(allusers)
 
 #Print subsection of users
-print(allusers[2])
+#print(allusers[2])
