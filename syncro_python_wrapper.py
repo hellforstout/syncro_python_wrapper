@@ -26,16 +26,19 @@ def getContract(id):
     resp = requests.get(url, headers=headers)
     contract = resp.json()['contract']
     return contract
+
 def getContracts():
     url = baseurl + "contracts"
     resp = requests.get(url, headers=headers)
     contracts = resp.json()['contracts']
     return contracts
+
 def getCustomer(id):
     url = baseurl + "customers" + str(id)
     resp = requests.get(url, headers=headers)
     customer = resp.json()['customer']
     return customer
+
 def getCustomers():
     url = baseurl + "customers"
     resp = requests.get(url, headers=headers)
@@ -47,6 +50,7 @@ def getEstimate(id):
     resp = requests.get(url, headers=headers)
     estimate = resp.json()['estimate']
     return estimate
+
 def getEstimates():
     url = baseurl + "estimates"
     resp = requests.get(url, headers=headers)
@@ -58,6 +62,7 @@ def getInvoice(id):
     resp = requests.get(url, headers=headers)
     invoice = resp.json()['invoice']
     return invoice
+
 def getInvoices():
     url = baseurl + "invoices"
     resp = requests.get(url, headers=headers)
@@ -69,6 +74,7 @@ def getProduct(id):
     resp = requests.get(url, headers=headers)
     product = resp.json()['product']
     return product
+
 def getProducts():
     url = baseurl + "products"
     resp = requests.get(url, headers=headers)
@@ -86,6 +92,7 @@ def getRMMalert(id):
     resp = requests.get(url, headers=headers)
     alert = resp.json()['rmm_alert']
     return alert
+
 def getRMMalerts():
     url = baseurl + "rmm_alerts?status=active"
     resp = requests.get(url, headers=headers)
@@ -97,6 +104,7 @@ def getTicket(id):
     resp = requests.get(url, headers=headers)
     ticket = resp.json()['ticket']
     return ticket
+
 def getTickets():
     url = baseurl + "tickets"
     resp = requests.get(url, headers=headers)
@@ -114,6 +122,7 @@ def getUsers():
     resp = requests.get(url, headers=headers)
     users = resp.json()['users']
     return users
+
 def getUseremail(id):
     url = baseurl + "users/" + str(id)
     resp = requests.get(url, headers=headers)
