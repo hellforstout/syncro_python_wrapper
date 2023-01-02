@@ -1,5 +1,5 @@
 #Use this script to set your environment variables on your workstation
-
+#You only need to run it once. It will set the environment variables
 import os
 
 #CHANGE ME#
